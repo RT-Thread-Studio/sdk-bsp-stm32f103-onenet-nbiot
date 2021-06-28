@@ -1,0 +1,102 @@
+board:
+  buy_url_cn: https://ecomall.cmcconenet.com/products/detail?goods_id=17
+  buy_url_global: https://ecomall.cmcconenet.com/products/detail?goods_id=17
+  debug_interface: SWD
+  debugger: J-Link
+  description_en: 'The OneNET NB-IoT V2.1 development board uses a high-performance
+    ARM Cortex-M3 32-bit microprocessor STM32F103RET6, equipped with the M5310 NB
+    module independently developed by China Mobile Internet of Things (the access
+    protocol embedded with OneNET: CoAP+LwM2M protocol) , Equipped with SHT20 temperature
+    and humidity sensor, ADXL345
+
+    Rich peripheral resources such as three-axis acceleration sensor, BH1750FVI light
+    sensor, BMP180 air pressure sensor, LED indicator, buzzer and buttons.'
+  description_zh: 'OneNET NB-IoT V2.1 开发板采用高性能 ARM Cortex-M3 32 位微处理器 STM32F103RET6，搭载中移物联网公司自主研发的
+    M5310 NB 模组（内嵌 OneNET的接入协议：CoAP+LwM2M 协议），外围配备 SHT20 温湿度传感器、ADXL345
+
+    三轴加速度传感器、BH1750FVI 光照传感器、BMP180 气压传感器、LED 指示灯、蜂鸣器及按键等丰富的外设资源。'
+  emulator_machine: ''
+  large_image: documents/images/board_front.png
+  name: STM32F103 ONENET NB-IOT
+  price_cn: 239.00 CNY
+  price_global: 36.87 USD
+  sale_contact_cn: https://ecomall.cmcconenet.com/products/detail?goods_id=17
+  sale_contact_global: https://ecomall.cmcconenet.com/products/detail?goods_id=17
+  small_image: documents/images/board_front.png
+  vendor: 中移物联网
+  version: 1.0.0
+chip:
+  chip_name: STM32F103RET6
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32F
+  source_freq: '8000000'
+  sub_series_name: STM32F103
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: sheet
+  file: documents/stm32f103re.pdf
+  title: stm32f103re
+example_projects: []
+features:
+- 'MCU: STM32F103RET6, clocked at 72MHz, 512KB FLASH, 64KB RAM'
+- 'LED: 4, (red, PA4-PA7)'
+- 'Buttons: 5, KEY_RST (reset button, NRST), KEY1 (PC0), KEY2 (PC1), KEY3 (PC2), KEY4
+  (PC3)'
+- USB to serial port, SIM card holder, OLED interface, etc.
+- SWD
+features_zh:
+- MCU：STM32F103RET6，主频 72MHz，512KB FLASH ，64KB RAM
+- LED：4个，（红色，PA4-PA7）
+- 按键：5个，KEY_RST（复位按键，NRST），KEY1（PC0），KEY2（PC1），KEY3（PC2），KEY4（PC3）
+- USB 转串口、SIM卡座 、OLED接口等
+- SWD 接口
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvopt
+    - project.uvoptx
+    - project.uvproj
+    - project.uvprojx
+    - README.md
+    - rt-thread
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvopt
+    - template.uvoptx
+    - template.uvproj
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files: []
+  project_description: ''
+  project_name: stm32f103-onenet-nbiot
+  project_type: rt-thread|@full|@4.0.3
+yaml_version: 3
